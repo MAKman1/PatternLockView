@@ -130,7 +130,7 @@ You can add various attributes to the PatternLockView from your XML layout.
   app:dotSelectedSize="24dp"                              // Change the size of the dots in selected state
   app:pathWidth="4dp"                                     // Change the width of the path
   app:aspectRatioEnabled="true"                           // Set if the view should respect custom aspect ratio
-  app:aspectRatio="square"                                // Set between "square", "width_bias", "height_bias"
+  app:aspectRatioIs="square"                                // Set between "square", "width_bias", "height_bias"
   app:normalStateColor="@color/white"                     // Set the color of the pattern view in normal state
   app:correctStateColor="@color/primary"                  // Set the color of the pattern view in correct state
   app:wrongStateColor="@color/pomegranate"                // Set the color of the pattern view in error state     
@@ -153,7 +153,7 @@ mPatternLockView.setDotNormalSize((int) ResourceUtils.getDimensionInPx(this, R.d
 mPatternLockView.setDotSelectedSize((int) ResourceUtils.getDimensionInPx(this, R.dimen.pattern_lock_dot_selected_size));
 mPatternLockView.setPathWidth((int) ResourceUtils.getDimensionInPx(this, R.dimen.pattern_lock_path_width));
 mPatternLockView.setAspectRatioEnabled(true);
-mPatternLockView.setAspectRatio(PatternLockView.AspectRatio.ASPECT_RATIO_HEIGHT_BIAS); 
+mPatternLockView.setAspectRatio(PatternLockView.AspectRatioIs.ASPECT_RATIO_HEIGHT_BIAS); 
 mPatternLockView.setNormalStateColor(ResourceUtils.getColor(this, R.color.white));
 mPatternLockView.setCorrectStateColor(ResourceUtils.getColor(this, R.color.primary));
 mPatternLockView.setWrongStateColor(ResourceUtils.getColor(this, R.color.pomegranate));
