@@ -35,9 +35,9 @@ import java.lang.annotation.RetentionPolicy;
 import java.util.ArrayList;
 import java.util.List;
 
-import static com.andrognito.patternlockview.PatternLockView.AspectRatioIs.ASPECT_RATIO_HEIGHT_BIAS;
-import static com.andrognito.patternlockview.PatternLockView.AspectRatioIs.ASPECT_RATIO_SQUARE;
-import static com.andrognito.patternlockview.PatternLockView.AspectRatioIs.ASPECT_RATIO_WIDTH_BIAS;
+import static com.andrognito.patternlockview.PatternLockView.AspectRatio.ASPECT_RATIO_HEIGHT_BIAS;
+import static com.andrognito.patternlockview.PatternLockView.AspectRatio.ASPECT_RATIO_SQUARE;
+import static com.andrognito.patternlockview.PatternLockView.AspectRatio.ASPECT_RATIO_WIDTH_BIAS;
 import static com.andrognito.patternlockview.PatternLockView.PatternViewMode.AUTO_DRAW;
 import static com.andrognito.patternlockview.PatternLockView.PatternViewMode.CORRECT;
 import static com.andrognito.patternlockview.PatternLockView.PatternViewMode.WRONG;
@@ -172,7 +172,7 @@ public class PatternLockView extends View {
                     DEFAULT_PATTERN_DOT_COUNT);
             mAspectRatioEnabled = typedArray.getBoolean(R.styleable.PatternLockView_aspectRatioEnabled,
                     false);
-            mAspectRatio = typedArray.getInt(R.styleable.PatternLockView_aspectRatioIs,
+            mAspectRatio = typedArray.getInt(R.styleable.PatternLockView_aspectRatio,
                     ASPECT_RATIO_SQUARE);
             mPathWidth = (int) typedArray.getDimension(R.styleable.PatternLockView_pathWidth,
                     ResourceUtils.getDimensionInPx(getContext(), R.dimen.pattern_lock_path_width));
